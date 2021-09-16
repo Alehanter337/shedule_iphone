@@ -8,22 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Spinner-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController title="Spinner" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Vzh-w3-zLv">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Vzh-w3-zLv">
                                 <rect key="frame" x="154" y="395" width="106" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vzh-w3-zLv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3XI-4t-hmF"/>
+                            <constraint firstItem="Vzh-w3-zLv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="4dX-8t-LEX"/>
+                            <constraint firstItem="Vzh-w3-zLv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="I8H-7y-3mb"/>
+                            <constraint firstItem="Vzh-w3-zLv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="351" id="pUE-7O-xHf"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="spinner" destination="Vzh-w3-zLv" id="7dV-Y1-UTA"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="spinner" destination="Vzh-w3-zLv" id="26b-Fh-DWd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

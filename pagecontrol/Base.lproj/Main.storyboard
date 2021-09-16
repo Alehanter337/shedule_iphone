@@ -17,18 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZJ-rL-Ngn">
-                                <rect key="frame" x="20" y="44" width="374" height="742"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <rect key="frame" x="20" y="44" width="374" height="741"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pux-U5-ue1">
-                                <rect key="frame" x="20" y="794" width="374" height="31"/>
+                            <segmentedControl opaque="NO" contentMode="center" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pux-U5-ue1">
+                                <rect key="frame" x="77" y="793" width="260" height="32"/>
+                                <color key="backgroundColor" red="0.1534808832" green="0.65058097510000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CZv-WV-A6a"/>
+                                    <constraint firstAttribute="width" constant="260" id="yTj-3C-rwT"/>
                                 </constraints>
                                 <segments>
                                     <segment title="1 неделя"/>
                                     <segment title="2 неделя"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="didChangeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="7hb-0i-W5i"/>
                                 </connections>
@@ -37,13 +39,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pux-U5-ue1" secondAttribute="bottom" constant="38" id="8m3-VO-geq"/>
-                            <constraint firstItem="Pux-U5-ue1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="QCI-yh-Mfv"/>
-                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RtL-3f-rMk"/>
-                            <constraint firstItem="Pux-U5-ue1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ViM-w1-cdt"/>
-                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gcB-4n-eB1"/>
-                            <constraint firstItem="Pux-U5-ue1" firstAttribute="top" secondItem="FZJ-rL-Ngn" secondAttribute="bottom" constant="8" id="kPO-Qk-Ecs"/>
-                            <constraint firstItem="Pux-U5-ue1" firstAttribute="centerX" secondItem="FZJ-rL-Ngn" secondAttribute="centerX" id="yzK-cR-fd4"/>
+                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mep-ys-uUs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pux-U5-ue1" secondAttribute="bottom" constant="38" id="fqX-G4-Ky6"/>
+                            <constraint firstItem="Pux-U5-ue1" firstAttribute="top" secondItem="FZJ-rL-Ngn" secondAttribute="bottom" constant="8" symbolic="YES" id="pCr-YB-EeG"/>
+                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rUk-e7-njd"/>
+                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yYv-eZ-Jql"/>
+                            <constraint firstItem="FZJ-rL-Ngn" firstAttribute="centerX" secondItem="Pux-U5-ue1" secondAttribute="centerX" id="zA8-Ch-yf5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,20 +63,129 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03k-1k-nKg">
-                                <rect key="frame" x="20" y="44" width="374" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g33-n5-pdp">
+                                <rect key="frame" x="20" y="142" width="374" height="110"/>
+                                <color key="backgroundColor" red="0.32293610633277459" green="0.78810119518330812" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.65025170269999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="vcy-Az-gXU"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="First Lesson">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="8" height="6"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1f-mq-Moj">
+                                <rect key="frame" x="20" y="260" width="374" height="110"/>
+                                <color key="backgroundColor" red="0.96038922810000005" green="0.89399862510000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="JkR-oZ-iQU"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Second Lesson">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="8" height="6"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-YL-RbW">
+                                <rect key="frame" x="20" y="496" width="374" height="110"/>
+                                <color key="backgroundColor" red="0.96038922810000005" green="0.89399862510000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="aGf-pD-HEj"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fourth Lesson">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="8" height="6"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-Nj-bRg">
+                                <rect key="frame" x="20" y="378" width="374" height="110"/>
+                                <color key="backgroundColor" red="0.32893285160000002" green="0.78125315900000003" blue="0.98977404830000004" alpha="0.44202127262037627" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="2jr-jB-5br"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Third Lesson">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="8" height="6"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fourth Lesson" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsn-Wm-a8W" userLabel="hidden_fix">
+                                <rect key="frame" x="20" y="614" width="374" height="110"/>
+                                <color key="backgroundColor" red="0.96038922810000005" green="0.89399862510000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <size key="shadowOffset" width="8" height="6"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03k-1k-nKg">
+                                <rect key="frame" x="20" y="58" width="284" height="51"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zp5-s9-auP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="top" secondItem="Zp5-s9-auP" secondAttribute="top" constant="98" id="6Em-xm-h9B"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="leading" secondItem="q1f-mq-Moj" secondAttribute="leading" id="9Km-ga-z6b"/>
+                            <constraint firstItem="Zsn-Wm-a8W" firstAttribute="top" secondItem="LvZ-YL-RbW" secondAttribute="bottom" constant="8" symbolic="YES" id="Eqi-1a-0Wl"/>
+                            <constraint firstItem="Zp5-s9-auP" firstAttribute="bottom" secondItem="Zsn-Wm-a8W" secondAttribute="bottom" constant="138" id="O7A-q6-00w"/>
+                            <constraint firstItem="LvZ-YL-RbW" firstAttribute="leading" secondItem="FWf-Nj-bRg" secondAttribute="leading" id="RDX-N8-pTb"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="trailing" secondItem="q1f-mq-Moj" secondAttribute="trailing" id="Txr-qr-baa"/>
+                            <constraint firstItem="LvZ-YL-RbW" firstAttribute="trailing" secondItem="Zsn-Wm-a8W" secondAttribute="trailing" id="Wzy-Kz-Vm1"/>
+                            <constraint firstItem="q1f-mq-Moj" firstAttribute="trailing" secondItem="FWf-Nj-bRg" secondAttribute="trailing" id="YGk-cT-ehX"/>
+                            <constraint firstItem="LvZ-YL-RbW" firstAttribute="leading" secondItem="Zsn-Wm-a8W" secondAttribute="leading" id="fIs-oH-k8E"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="leading" secondItem="kYI-TC-vx1" secondAttribute="leadingMargin" id="gTI-le-U0B"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="leading" secondItem="03k-1k-nKg" secondAttribute="leading" id="gxa-9E-a0L"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="trailing" secondItem="kYI-TC-vx1" secondAttribute="trailingMargin" id="iNq-eM-TCp"/>
+                            <constraint firstItem="q1f-mq-Moj" firstAttribute="top" secondItem="g33-n5-pdp" secondAttribute="bottom" constant="8" symbolic="YES" id="jLD-2S-SdF"/>
+                            <constraint firstItem="g33-n5-pdp" firstAttribute="top" secondItem="03k-1k-nKg" secondAttribute="bottom" constant="47" id="jz5-de-ROe"/>
+                            <constraint firstItem="q1f-mq-Moj" firstAttribute="leading" secondItem="FWf-Nj-bRg" secondAttribute="leading" id="kFT-Yb-gLL"/>
+                            <constraint firstItem="LvZ-YL-RbW" firstAttribute="trailing" secondItem="FWf-Nj-bRg" secondAttribute="trailing" id="rpz-lT-36Q"/>
+                            <constraint firstItem="LvZ-YL-RbW" firstAttribute="top" secondItem="FWf-Nj-bRg" secondAttribute="bottom" constant="8" symbolic="YES" id="tiu-Jy-iur"/>
+                            <constraint firstItem="FWf-Nj-bRg" firstAttribute="top" secondItem="q1f-mq-Moj" secondAttribute="bottom" constant="8" symbolic="YES" id="uLp-5M-bP7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zsn-Wm-a8W"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="DisplayLabel" destination="03k-1k-nKg" id="zha-71-fJs"/>
+                        <outlet property="FourthLesson" destination="LvZ-YL-RbW" id="XhG-Rc-bvL"/>
                         <outlet property="displayLabel" destination="03k-1k-nKg" id="y0Q-xu-LvI"/>
+                        <outlet property="firstLesson" destination="g33-n5-pdp" id="nTE-XD-sW6"/>
+                        <outlet property="secondLesson" destination="q1f-mq-Moj" id="I3e-XY-XzX"/>
+                        <outlet property="thirdLesson" destination="FWf-Nj-bRg" id="vl6-aI-RgI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cv-SC-5wg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -92,11 +202,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
